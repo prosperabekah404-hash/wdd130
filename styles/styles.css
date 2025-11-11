@@ -1,3 +1,9 @@
+:root {
+    --darkblue: #003366;
+    --lightblue: #3399ff;
+    --gray: #666666;
+    --lightgray: #cccccc;
+}
 nav {
     background-color: darkblue;
     padding: 10px
