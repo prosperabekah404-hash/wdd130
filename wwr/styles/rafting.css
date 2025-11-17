@@ -1,59 +1,190 @@
-:root{
-    --primary-color: #2a9d8f;
-    --secondary-color: #264653;
+:root {
+    --primary-color: #1a4b6d;
+    --secondary-color: #2a9d8f;
     --accent-color: #e76f51;
-    --background-color: #2e4ad8;
+    --background-color: #f8f9fa;
     --text-color: #333333;
+    --light-text: #ffffff;
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: "Times New Roman", "Georgia", serif;
 }
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .hero article img {
-  float: right;
-  width: 125px;
-}
 
-header{
-    background-color:rgb(43, 150, 226);
-    color: rgb(177, 137, 84);
-}
-*, *::before, *::after {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
-h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent-color);
-  color: #fff; /* white text – make sure there is enough contrast with the background-color */
-}
-body{background-color: var(--background-color);}
-body{
+
+body {
     font-family: var(--body-font);
     color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
 }
-header, main, footer{
-    width: 840px;
-    margin:0 auto;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-h1, h2, h3{
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+
+.logo img {
+    height: 60px;
+    width: auto;
 }
-nav, p, section, article{
-    margin:16px;
-    padding:8px;
+
+nav ul {
+    display: flex;
+    list-style: none;
 }
-.socialmedia a{
+
+nav li {
+    margin-left: 1.5rem;
+}
+
+nav a {
+    color: var(--light-text);
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--light-text);
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 80%;
+}
+
+.hero p {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    width: 80%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    color: var(--light-text);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d45a3c;
+}
+
+.history, .adventure {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    padding: 0 2rem;
+}
+
+.history h2, .adventure h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.history p, .adventure p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socialmedia a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.1);
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav li {
+        margin: 0.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .history, .adventure {
+        padding: 0 1rem;
+    }
 }
