@@ -23,14 +23,13 @@ main img {
     height: 20em;
     border: #eee;
     padding: 1rem;
-    box-shadow: #999;
+    box-shadow: 10px 10px;
 }
 
 aside {
     width: 20em;
     margin: 1rem;
-    border: 1px solid rgb(000/0.2);
-    /* 1 */
+    border: 1px solid #999;
     padding: 1rem;
     background-color: #eee;
     text-align: center;
