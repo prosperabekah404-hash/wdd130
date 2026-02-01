@@ -17,6 +17,13 @@
     box-sizing: border-box;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    /* Adjust based on logo size */
+    align-items: center;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -33,6 +40,12 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 nav,
