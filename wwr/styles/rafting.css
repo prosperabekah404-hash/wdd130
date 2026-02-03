@@ -12,8 +12,8 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 1rem;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
@@ -33,7 +33,7 @@ header,
 main,
 footer {
     width: 840px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 h1,
@@ -56,8 +56,9 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px
+
+    margin: 20px;
+    padding: 8px;
 }
 
 .socialmedia a {
@@ -75,7 +76,7 @@ article {
 }
 
 .hero h1 {
-    position: absolute;
+    position: relative;
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -87,7 +88,7 @@ article {
 }
 
 .hero article {
-    position: absolute;
+    position: relative;
 }
 
 .hero article img {
