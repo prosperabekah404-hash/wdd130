@@ -1,7 +1,7 @@
-# TODO: Add Employee Profiles Section to Contact Page
+# TODO for Trips Layout Update
 
-- [x] Edit `wwr/contact.html` to add a new `<section>` element with class `employee-profiles` below the `.contact-grid` div and above the `<h2>Adventure Awaits You!</h2>`.
-  - Include a grid container with three profile cards for Joseph, Mark, and Ben.
-  - Each card should have: `<img>` with placeholder src, `<h3>` for name, and `<p>` for description (placeholder).
-- [x] Edit `wwr/styles/rafting.css` to add CSS rules for `.employee-profiles` (grid layout with 3 columns, spacing, and basic card styling).
-- [x] Verify the layout by opening the page in a browser.
+- [x] Replace the table in `wwr/Trips.html` with a responsive grid of trip cards.
+  - Create a `.trips-grid` div with individual `.trip-card` divs for each trip.
+  - Each card includes image, name, difficulty, duration, price, and description.
+- [x] Add CSS styles in `wwr/styles/rafting.css` for `.trips-grid` (responsive grid with auto-fit columns) and `.trip-card` (border, padding, background).
+- [x] Test the page in a browser to ensure the grid displays correctly and is responsive.

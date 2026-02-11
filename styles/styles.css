@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
-    background-color: #eee;
+    background-color: #0f3884;
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -13,7 +19,7 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #fff;/% shorthand for white %/
+    color: #fff;
 }
 
 h1 {
@@ -37,12 +43,25 @@ aside {
     grid-row: 1/2;
 }
 
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
 main img {
     width: 15em;
     height: 20em;
     border: #eee;
     padding: 1rem;
     box-shadow: 10px 10px;
+}
+
+main img {
+    /* you most likely will have other CSS declarations here */
+    float: right;
 }
 
 aside {
@@ -52,6 +71,12 @@ aside {
     padding: 1rem;
     background-color: #eee;
     text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 aside img {
