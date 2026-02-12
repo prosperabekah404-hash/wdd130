@@ -69,7 +69,7 @@ aside {
     margin: 1rem;
     border: 1px solid #999;
     padding: 1rem;
-    background-color: #eee;
+    background-color: hsl(0, 33%, 71%);
     text-align: center;
 }
 
